@@ -1,0 +1,24 @@
+{
+  "name": "esbuild-swagger-example",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/index.js --bundle --platform=node --outfile=dist/index.cjs --minify",
+    "start": "node dist/index.cjs",
+    "dev": "node --watch src/index.js"
+  },
+  "author": "Ezequiel Amin",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.20.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}
